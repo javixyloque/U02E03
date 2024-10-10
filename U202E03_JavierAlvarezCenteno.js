@@ -12,7 +12,7 @@ const verificarNumeroTarjeta = numT => {
     // DE VERDAD QUE NO SE ME OCURRIA OTRA FORMA DE HACERLO,
     // CON FOREACH NO ME DEJABA HACERLO
     let arrOrd = arrNums.map((element, index) => {
-        if (index%2!==0) {
+        if (index%2==0) {
             temp = parseInt(element*2);
             if (temp>=10) {
                 temp-=9;
